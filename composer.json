@@ -1,0 +1,23 @@
+{
+    "name": "yappkahowe/artisan-complement",
+    "description": "Additional Artisan commands to make working in Laravel framework more convenient.",
+    "keywords": ["artisan", "commands", "laravel"],
+    "type": "library",
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/console": "^5.4",
+        "illuminate/support": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yappkahowe\\ArtisanComplement\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yapp Ka Howe",
+            "email": "yappkahowe@gmail.com"
+        }
+    ]
+}
