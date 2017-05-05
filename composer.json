@@ -1,6 +1,6 @@
 {
     "name": "yappkahowe/artisan-complement",
-    "description": "Additional Artisan commands to make working in Laravel framework more convenient.",
+    "description": "Additional Artisan commands to make working with Laravel framework more convenient.",
     "keywords": ["artisan", "commands", "laravel"],
     "type": "library",
     "require": {
