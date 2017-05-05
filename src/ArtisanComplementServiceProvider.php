@@ -54,8 +54,18 @@ class ArtisanComplementServiceProvider extends ServiceProvider
      */
     protected function registerChannelMakeCommand()
     {
-        $this->app->singleton('command.channel.make', function () {
-            return new ChannelMakeCommand;
+        $this->app->singleton('command.channel.make', function ($app) {
+            return new ChannelMakeCommand($app['files']);
         });
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return array_values($this->commands);
     }
 }
