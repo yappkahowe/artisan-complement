@@ -15,9 +15,10 @@ To get started with Artisan Complement, simply run:
 ],
 ```
 
-## Basic Usage
+## Additional Commands
 
-From your console, execute the `php artisan` command to see a list of artisan commands.
+1. `make:channel` Create a new channel class.
+2. `make:scope` Create new scope class.
 
 ## Suggestions
 
