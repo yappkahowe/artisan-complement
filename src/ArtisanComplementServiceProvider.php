@@ -19,7 +19,8 @@ class ArtisanComplementServiceProvider extends ServiceProvider
      * @var array
      */
     protected $commands = [
-        'ChannelMake'    => 'command.channel.make',
+        'ChannelMake'   => 'command.channel.make',
+        'ScopeMake'     => 'command.scope.make',
     ];
 
     /**
@@ -56,6 +57,18 @@ class ArtisanComplementServiceProvider extends ServiceProvider
     {
         $this->app->singleton('command.channel.make', function ($app) {
             return new ChannelMakeCommand($app['files']);
+        });
+    }
+
+    /**
+     * Register the command.
+     *
+     * @return void
+     */
+    protected function registerScopeMakeCommand()
+    {
+        $this->app->singleton('command.scope.make', function ($app) {
+            return new ScopeMakeCommand($app['files']);
         });
     }
 
