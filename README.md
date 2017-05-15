@@ -1,5 +1,5 @@
 ## Artisan Complement
-A list of additional Artisan commands to make working with Laravel framework more convenient.
+A list of complementary Artisan commands to make working with Laravel framework more convenient.
 
 ## Installation
 
@@ -15,10 +15,11 @@ To get started with Artisan Complement, simply run:
 ],
 ```
 
-## Additional Commands
+## Complementary Commands
 
 1. `make:channel` Create a new channel class.
-2. `make:scope` Create new scope class.
+2. `make:observer` Create a new observer class.
+3. `make:scope` Create new scope class.
 
 ## Suggestions
 
